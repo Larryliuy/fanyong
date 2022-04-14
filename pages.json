@@ -1,0 +1,186 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/index",
+		// 	"style": {
+		// 		"navigationBarTitleText":"HARVEY NICHOLS"
+		// 	}
+		// },
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		}, {
+			"path": "pages/home/detail",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/home/content"
+		}, {
+			"path": "pages/company/company",
+			"style": {
+				"app-plus": {
+				  "titleNView": {
+				    "buttons": [{
+						"text":"ルール紹介",
+						"fontSize": "14px",
+						"color": "#000000",
+						"width": "80px"
+				      }]
+				  }
+				}
+			}
+		},  {
+			"path": "pages/company/introduce"
+		}, {
+			"path": "pages/drawback/drawback",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/drawback/payDeatil"
+		}, {
+			"path": "pages/drawback/orderDeatil"
+		}, {
+			"path": "pages/energy/energy",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		}, {
+			"path": "pages/energy/payDeatil"
+		}, {
+			"path": "pages/energy/orderDeatil"
+		}, {
+			"path": "pages/miner/miner",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		}, {
+			"path": "pages/miner/payDeatil"
+		}, {
+			"path": "pages/miner/orderDeatil"
+		},{
+			"path": "pages/vip/vip"
+		}, {
+			"path": "pages/vip/level"
+		}, {
+			"path": "pages/mine/mine"
+		}, {
+			"path": "pages/mine/forgetCPwd"
+		}, {
+			"path": "pages/mine/wallet/wallet"
+		}, {
+			"path": "pages/mine/yuebao/yeb",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/mine/yuebao/mingxi",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/mine/discount/list",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/mine/discount/mingxi",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/mine/deal",
+			"style": {
+				"enablePullDownRefresh":true
+			}
+		}, {
+			"path": "pages/mine/wallet/bankCard"
+		}, {
+			"path": "pages/mine/wallet/recharge"
+		}, {
+			"path": "pages/mine/wallet/rechargeSuc"
+		}, {
+			"path": "pages/mine/wallet/withDraw"
+		}, {
+			"path": "pages/mine/expandLink",
+			"style": {
+				"transparentTitle": "auto"
+			}
+		}, {
+			"path": "pages/mine/languages"
+		}, {
+			"path": "pages/login/register",
+			"style":{
+				"navigationStyle":"custom"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style":{
+				"navigationStyle":"custom"
+			}
+		}, {
+			"path": "pages/ip/limit",
+			"style":{
+				"navigationStyle":"custom"
+			}
+		}, {
+			"path": "pages/login/forgetPwd"
+		}
+	    ,{
+            "path" : "components/asyncError/asyncError",
+            "style" :
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }
+    ],
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor":"#FFC24F",
+		"backgroundColor": "",
+		"borderStyle":"none",
+		"list": [ {
+			"pagePath": "pages/home/home",
+			"text": "",
+			"iconPath": "static/tabbar/home.png",
+			"selectedIconPath": "static/tabbar/home_act.png"
+		},{
+			"pagePath": "pages/company/company",
+			"text": "",
+			"iconPath": "static/tabbar/company.png",
+			"selectedIconPath": "static/tabbar/company_act.png"
+		}, {
+			"pagePath": "pages/drawback/drawback",
+			"text": "",
+			"iconPath":"static/tabbar/drawback_us_pro.png",
+			"selectedIconPath":"static/tabbar/drawback_act_us_pro.png"
+		}, {
+			"pagePath": "pages/vip/vip",
+			"text": "",
+			"iconPath": "static/tabbar/vip.png",
+			"selectedIconPath": "static/tabbar/vip_act.png"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"text": "",
+			"iconPath": "static/tabbar/mine.png",
+			"selectedIconPath": "static/tabbar/mine_act.png"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor":"#caa160",
+		"backgroundColor": "#F4F4F4"
+	},
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "^xf-(.*)": "@/components/module/xf-$1.vue" // 匹配components目录内的vue文件
+	  }
+	}
+}

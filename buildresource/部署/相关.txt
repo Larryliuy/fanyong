@@ -1,0 +1,9 @@
+手动部署生产环境的
+
+
+1、修改权限  sudo chmod +x taxdeploy
+
+2、MAC命令：taxdeploy ./h5.zip  ca 
+	(./h5.zip为要发布的H5包； ca为加拿大版本)
+
+3、windows要修改path路径： taxdeploy 命令  

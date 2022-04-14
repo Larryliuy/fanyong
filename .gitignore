@@ -1,0 +1,21 @@
+.DS_Store
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+src/vue-kernel/
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.exe.stackdump
+package-lock.json
+*.patch
+unpackage/cache/
+unpackage/release/
+unpackage/res/
+unpackage/resources/

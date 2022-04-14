@@ -1,0 +1,38 @@
+项目：uniapp的项目--foreign-trade
+
+打包前目前需要修改：
+1、修改 myconfig.js 里的 environment
+2、修改manifest.json 里的基础配置、H5、Android、iOS4个地方、4个地方、4个地方里的配置
+
+================================================================================================
+
+Android：
+密码：  bbbforeigntrade.168
+
+别名： foreigntrade.keystore
+
+包名： com.foreigntrade.foreign
+
+证书命令：   keytool -genkey -alias foreigntrade.keystore -keyalg RSA -keysize 2048 -validity 36500 -keystore foreigntrade.keystore
+
+
+
+IOS：
+密码：123456
+
+包名： com.foreigntrade.foreign
+
+
+APP 名称：
+中文版：HN退税
+巴西版：LUMINE
+加拿大版：MITSUKOSHI
+
+H5标题：
+中国版：Harvey Nichols
+巴西版：LUMINE
+加拿大版：MITSUKOSHI
+
+
+
+================================================================================================
